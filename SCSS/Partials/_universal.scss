@@ -1,0 +1,15 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.section-title{
+    text-transform: capitalize;
+    color: $darkestblue;
+    border-bottom: 5px $darkerblue solid;
+    width: 120px;
+}
+
+.content-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,16 @@
+.course{
+    &-background{
+        background-color: $secondary;
+        padding: 10px 0px;
+    }
+    &-title{
+        width: 130px;
+    }
+    &-section{
+        
+    }
+    &-link{
+        text-decoration: none;
+        color: $primary;
+    }
+}

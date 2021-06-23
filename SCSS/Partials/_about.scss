@@ -1,0 +1,32 @@
+.about{
+    &-background{
+        background-color: $secondary;
+    }
+    &-title{
+        text-transform: capitalize;
+        color: $darkestblue;
+        border-bottom: 5px $darkerblue solid;
+        width: 120px;
+    }
+    &-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+        margin-bottom: 20px;
+    }
+    &-box{
+        background-color: $yellow;
+        padding: 15px 10px;
+        border-radius: 5px;
+        width: 45%;
+        box-shadow: 12px 7px 22px 10px rgba(0,0,0,0.26);
+    }
+    &-1{
+        margin-top: 10px;
+        height: 200px;
+    }
+    &-2{
+        margin-top: 50px;
+    }
+}
