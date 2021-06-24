@@ -8,6 +8,14 @@ body{
     color: $darkestblue;
     border-bottom: 5px $darkerblue solid;
     width: 120px;
+    text-align: center;
+    margin: 10px auto 0;
+    
+    @media (min-width:1208px){
+        text-align: left;
+        margin: 0;
+        margin-top: 10px;
+    }
 }
 
 .content-wrapper{

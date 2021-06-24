@@ -32,6 +32,7 @@
         text-align: center;
         margin: 5px 10px;
         border-radius: 15px;
+        margin: 0 auto;
     }
     &-desc{
         h3{
@@ -57,6 +58,10 @@
 }
 
 .project-img{
-    width: 340px;
+    width: 80vw;
+    @media (min-width:768px){
+        width: 340px;
+    }
+    
 }
 

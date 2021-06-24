@@ -10,6 +10,7 @@ header{
     .header-elements{
         line-height: 0.8;
         letter-spacing: -1px;
+        padding-top: 20vw;
         @media (min-width:768px){
             padding-top: 20vw;
         }
@@ -21,7 +22,7 @@ header{
         h1{
             color: $secondary;
             margin: 0;
-            text-align: right;
+            text-align: center;
             @media (min-width:768px){
                 text-align: center;
                 
@@ -32,6 +33,7 @@ header{
         }
         h2{
             margin: 0;
+            text-align: center;
             @media(min-width:768px){
                 text-align: center;
             }
@@ -42,6 +44,7 @@ header{
         h3{
             color: $darkestblue;
             margin: 2px 0px;
+            text-align: center;
             @media(min-width:768px){
                 text-align: center;
             }
@@ -52,9 +55,7 @@ header{
     }
 
 .scroll{
-    @media(min-width:768px){
-        display: none;
-    }
+    display: none;
     @media(min-width:1208px){
         display: block;
     }

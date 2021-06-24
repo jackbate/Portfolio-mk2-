@@ -10,17 +10,28 @@
     }
     &-title{
         width: 150px;
+        @media (min-width:768px){
+            margin-right: 100%;
+        }
+        @media (min-width:1208px){
+            margin-right: 0;
+        }
     }
 
     &-details{
-        width: 40%;
+        width: 100%;
+        text-align: center;
         h2{
             color: $primary;
         }
         p{
+            margin: 0 auto;
             width: 80%;
             line-height: 0.9;
             color: $darkestblue;
+            @media (min-width:768px){
+                margin: 0;
+            }
         }
         h3{
             color: $primary;
@@ -28,30 +39,49 @@
         a{
             text-decoration: none;
             color: $darkerblue;
+            &:hover{
+                color: $darkestblue;
+            }
+        }
+        @media (min-width:768px){
+            width: 40%;
+            text-align: left;
         }
     }
     &-form{
-        width: 60%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+        display: none;
+        @media (min-width:768px){
+            display: flex;
+            width: 60%;
+            text-align: center;
+            flex-direction: column;
+        }
     }
     &-fname{
-        width: 45%;
-        margin-left: 15px;
         background-color: $grey;
         border-radius: 5px;
         border: 1px $grey solid;
         height: 20px;
+        width: 45%;
+        @media (min-width:768px){
+            margin-left: 8px;
+        }
+        @media (min-width:1208px){
+            margin-left: 15px;
+        }
     }
     &-lname{
-        margin-right: 15px;
         width: 45%;
         background-color: $grey;
         border-radius: 5px;
         border: 1px $grey solid;
         height: 20px;
-
+        @media (min-width:768px){
+            margin-right: 8px;
+        }
+        @media (min-width:1208px){
+            margin-right: 15px;
+        }
     }
 
     &-email{
