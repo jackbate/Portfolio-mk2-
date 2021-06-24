@@ -1,6 +1,97 @@
 .contact{
     &-background{
-        
+        background-color: $tertiary;
+        padding: 10px 0px;
     }
-    
+    &-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &-title{
+        width: 150px;
+    }
+
+    &-details{
+        width: 40%;
+        h2{
+            color: $primary;
+        }
+        p{
+            width: 80%;
+            line-height: 0.9;
+            color: $darkestblue;
+        }
+        h3{
+            color: $primary;
+        }
+        a{
+            text-decoration: none;
+            color: $darkerblue;
+        }
+    }
+    &-form{
+        width: 60%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    &-fname{
+        width: 45%;
+        margin-left: 15px;
+        background-color: $grey;
+        border-radius: 5px;
+        border: 1px $grey solid;
+        height: 20px;
+    }
+    &-lname{
+        margin-right: 15px;
+        width: 45%;
+        background-color: $grey;
+        border-radius: 5px;
+        border: 1px $grey solid;
+        height: 20px;
+
+    }
+
+    &-email{
+        margin-top: 10px;
+        width: 93%;
+        background-color: $grey;
+        border-radius: 5px;
+        border: 1px $grey solid;
+        height: 20px;
+    }
+
+    &-subject{
+        margin-top: 10px;
+        width: 93%;
+        background-color: $grey;
+        border-radius: 5px;
+        border: 1px $grey solid;
+        height: 20px;
+    }
+
+    &-message{
+        margin-top: 10px;
+        width: 93%;
+        background-color: $grey;
+        border-radius: 5px;
+        border: 1px $grey solid;
+        height: 200px;
+    }
+
+    &-submit{
+        margin-top: 5px;
+        background-color: $tertiary;
+        color: $primary;
+        width: 80px;
+        height: 30px;
+        border: 1px $primary solid;
+        border-radius: 5px;
+        &:hover{
+            background-color: $primary;
+            color: $tertiary;
+        }
+    }
 }

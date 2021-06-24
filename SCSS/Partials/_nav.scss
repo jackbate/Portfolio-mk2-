@@ -1,0 +1,125 @@
+.navbar{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.nav{
+    &-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+        }
+    }
+    &-des{
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        // box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+        font-size: 12px;
+        text-align: center;
+        align-items: flex-end;
+        margin-top: 20px;
+        padding: 20px;
+        color: $primary;
+        font-weight: bold;
+        p{
+            margin-top: 10px;
+            width: 60px;
+            margin-left: 10px;
+        }
+        &:hover{
+            background-color: $secondary;
+        }
+    }
+    &-about{
+        background-color: $red1;
+        margin-left: 10px;
+        margin-top: 50px;
+        p{
+            margin-left: 13px;
+            width: 55px;
+        }
+        &:hover{
+            color: $red1;
+        }
+        
+    }
+    &-projects{
+        background-color: $yellow2;
+        margin-right: 25%;
+        &:hover{
+            color: $yellow2;
+        }
+    }
+    &-course{
+        background-color: $yellow;
+        margin-left: 25%;
+        &:hover{
+            color: $yellow;
+        }
+    }
+    &-contact{
+        background-color: $red2;
+        margin-right: 25px;
+        margin-top: 50px;
+        &:hover{
+            color: $red2;
+        }
+    }
+    &-letter{
+        margin-top: -40px;
+        font-size: 50px;
+        color: $secondary;
+        &:hover{
+            color: $darkerblue;
+        }
+    }
+    &-icon{
+        font-size: 28px;
+    }
+}
+
+
+// This is eventually going to be the  text to curve aroung my Nav bar items hopefully making  it look slightly better
+// #simple_arc {
+//     display: block;
+//         width:306px;
+//         height:305px;
+// }
+
+// #simple_arc>span[class^=w]:nth-of-type(n+0){
+//     display:block;
+//     position:absolute;
+//     -moz-transform-origin:50% 100%;
+//     -webkit-transform-origin:50% 100%;
+//     -o-transform-origin:50% 100%;
+//     -ms-transform-origin:50% 100%;
+//     transform-origin:50% 100%;
+// }
+
+// #simple_arc span{
+//     font-family:'Viga';
+//     font-size:38px;
+//     font-weight:regular;
+//     font-style:normal;
+//     line-height:0.65;
+//     white-space:pre;
+//     overflow:visible;
+//     padding:0px;
+// }
+
+// #simple_arc .w0 {
+//     -moz-transform: rotate(-1.14rad);
+//     -webkit-transform: rotate(-1.14rad);
+//     -o-transform: rotate(-1.14rad);
+//     -ms-transform: rotate(-1.14rad);
+//     transform: rotate(-1.14rad);
+//     width: 21px;
+//     height: 24px;
+//     left: 42.7px;
+//     top: 93.95px;
+// }
+

@@ -6,11 +6,14 @@
     &-title{
         width: 130px;
     }
-    &-section{
+    // &-section{
         
-    }
+    // }
     &-link{
         text-decoration: none;
         color: $primary;
+        &:hover{
+            color: $darkerblue;
+        }
     }
 }

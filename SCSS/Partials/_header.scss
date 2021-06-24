@@ -4,16 +4,23 @@ header{
     height: 800px;
 }
     .header-elements{
-        padding: 10vw 40% 0;
+        padding: 10vw 43% 0;
         line-height: 0.8;
         letter-spacing: -1px;
+        width: 182px;
         h1{
             color: $secondary;
             text-align: left;
+            margin: 0;
         }
         h2{
             color: $darkestblue;
-            text-align: left;
+            text-align: center;
+            margin: 0;
+        }
+        h3{
+            text-align: center;
+            margin: 10px 0px;
         }
     }
 

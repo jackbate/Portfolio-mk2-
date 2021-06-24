@@ -17,7 +17,7 @@
 
     <body>
 
-        <header>
+        <header id="top">
             <div>
                 <div class="content-wrapper">
                     <div class="header-elements">
@@ -32,10 +32,52 @@
                     </div>
                 </div>
             </div>
+            <div class="navbar">
+                <div class="nav-container">
+                    <a href="#about" class="nav-about nav-des">
+                        <div class="nav-icon nav-about-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p>About Me</p>
+                        <!-- This is a bit of code i had used to try get circular text  for the navigation items text but couldnt get it to work -->
+                        <!-- <div id="simple_arc">
+                            <span class='w0'>A</span>
+                            <span class='w1'>B</span>
+                            <span class='w2'>O</span>
+                            <span class='w3'>U</span>
+                            <span class='w4'>T</span>
+                            <span class='w5'></span>
+                            <span class='w6'>M</span>
+                            <span class='w7'>E</span>
+                        </div> -->
+                    </a>
+                    <a href="#projects" class="nav-projects nav-des">
+                        <div class="nav-icon nav-project-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <p>Previous Projects</p>
+                    </a>
+                    <a href="#top" class="nav-letter">
+                        <h3>J</h3>
+                    </a>
+                    <a href="#course" class="nav-course nav-des">
+                        <div class="nav-icon nav-course-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <p>The Scion Course</p>
+                    </a>
+                    <a href="#contact" class="nav-contact nav-des">
+                        <div class="nav-icon nav-contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <p>Contact Me</p>
+                    </a>
+                </div>
+            </div>
         </header>
 
         <section>
-            <div class="about-background">
+            <div class="about-background" id="about">
                 <div class="content-wrapper">
                     <h2 class="section-title">A bit about me</h2>
                     <div class="about-container">
@@ -56,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-background">
+            <div class="project-background" id="projects">
                 <div class="content-wrapper">
                     <h2 class="section-title">Previous projects</h2>
                     <div class="project-container">
@@ -67,6 +109,7 @@
                             <div class="project-desc">
                                 <h3>The Netmatters Homepage</h3>
                                 <p>This is the first project of the course where i had created a replica of the netmatters homepage including with the use of HTML, CSS/ SCSS and JavaScript as a test of my ability</p>
+                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
                             </div>
                         </div>
                         <div class="project-2 project-box">
@@ -76,6 +119,7 @@
                             <div class="project-desc">
                                 <h3>Inspire Norfolk</h3>
                                 <p>For this project I had worked collaboratively with a fellow Scion to produce a comprehensive 6 webpage site with only the homepage to design the website. This was to test our abilities as collaborative developers as well as refining our HTML/CSS Skils as well.</p>
+                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
                             </div>
                         </div>
                         <div class="project-3 project-box">
@@ -85,6 +129,7 @@
                             <div class="project-desc">
                                 <h3>lorem Ipsum</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper rutrum rutrum. Suspendisse in est molestie, tincidunt orci a, mattis ante. Sed semper vestibulum eleifend.</p>
+                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
                             </div>
                         </div>
                         <div class="project-4 project-box">
@@ -94,6 +139,7 @@
                             <div class="project-desc">
                                 <h3>loreum ipsum</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper rutrum rutrum. Suspendisse in est molestie, tincidunt orci a, mattis ante. Sed semper vestibulum eleifend.</p>
+                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
                             </div>
                         </div>
                         <div class="project-5 project-box">
@@ -103,6 +149,7 @@
                             <div class="project-desc">
                                 <h3>loreum ipsum</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper rutrum rutrum. Suspendisse in est molestie, tincidunt orci a, mattis ante. Sed semper vestibulum eleifend.</p>
+                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
                             </div>
                         </div>
                         <div class="project-6 project-box">
@@ -112,11 +159,13 @@
                             <div class="project-desc">
                                 <h3>loreum Ipsum</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper rutrum rutrum. Suspendisse in est molestie, tincidunt orci a, mattis ante. Sed semper vestibulum eleifend.</p>
+                                <a href="#" class="project-link" id="project-link">Check out the Project!</a>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
-            <div class="course-background">
+            <div class="course-background" id="course">
                 <div class="content-wrapper">
                     <h2 class="section-title course-title">the scion scheme</h2>
                     <div class="course-container">
@@ -126,21 +175,30 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-background">
+            <div class="contact-background" id="contact">
                 <div class="content-wrapper">
                     <h2 class="section-title contact-title">Contact Me</h2>
-                    <div class="contact-container">
-                        <form>
-                            <label for="name">Your Name</label> <br>
-                            <input type="text" name="name" id="name">
-
-                        </form>
+                    <div class="contact-section">
+                        <div class="contact-details">
+                            <h2>Get in touch</h2>
+                            <p>Feel free to get in touch by any means if you would like to ask me any questions. I am more than happy to respond to any queries and will aim to respond as soon as possible.</p>
+                            <h3>07592762403</h3>
+                            <h3 class="contact-email1"><a href="mailto: jack.pm.bate@gmail.com">jack.pm.bate@gmail.com</a></h3>
+                        </div>
+                        <div class="contact-form">
+                            <form>
+                                <input type="text" name="fname" class="contact-fname" placeholder="First Name">
+                                <input type="text" name="lname" class="contact-lname" placeholder="Last Name">
+                                <input type="email" name="email" class="contact-email" placeholder="Email">
+                                <input type="text" name="subject" class="contact-subject" placeholder="Subject">
+                                <input type="text" name="message" class="contact-message" placeholder="Message">
+                                <button name="submit" class="contact-submit">Submit</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer>
-
-        </footer>
+        
     </body>
 </html>
