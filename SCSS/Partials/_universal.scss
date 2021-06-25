@@ -1,6 +1,11 @@
 body{
     font-family: 'Roboto Mono', monospace;
     background-color: $secondary;
+    a{
+        &:hover{
+            border-color: transparent;
+        }
+    }
 }
 
 .section-title{
@@ -19,10 +24,13 @@ body{
 }
 
 .scroll-up{
+    display: none;
     text-align: center;
-    margin-left: 49.5%;
     text-decoration: none;
     color: $darkestblue;
+    @media (min-width:1208px){
+        display: inherit;
+    }
 }
 
 .content-wrapper{

@@ -18,6 +18,9 @@
         background-color: $tertiary;
         padding: 10px 0px;
     }
+    &-title{
+        margin-bottom: 10px;
+    }
     &-container{
         padding: 0px 20px;
         display: flex;
@@ -25,7 +28,8 @@
         flex-wrap: wrap;
     }
     &-box{
-        width: 340px;
+        width: 85vw;
+        // 340px
         border: 3px $tertiary solid;
         background-color: $secondary;
         padding: 10px;
@@ -37,6 +41,15 @@
         margin-bottom: 15px;
         -webkit-box-shadow: 0px 14px 34px -4px rgba(0,0,0,0.3); 
         box-shadow: 0px 14px 34px -4px rgba(0,0,0,0.3); 
+        @media (min-width:768px){
+            width: 40vw;
+        }
+        @media (min-width:998px){
+            width: 34vw;
+        }
+        @media (min-width:1208px){
+            width: 340px;
+        }
     }
     &-desc{
         h3{
@@ -63,7 +76,13 @@
 
 .project-img{
     width: 80vw;
-    @media (min-width:758px){
+    @media (min-width:768px){
+        width: 40vw;
+    }
+    @media (min-width:998px){
+        width: 34vw;
+    }
+    @media (min-width:1208px){
         width: 340px;
     }
     
