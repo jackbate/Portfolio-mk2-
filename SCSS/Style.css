@@ -20,6 +20,17 @@ body {
   }
 }
 
+.scroll-up {
+  text-align: center;
+  margin-left: 49.5%;
+  text-decoration: none;
+  color: #17252A;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+}
+
 @media (min-width: 998px) {
   .content-wrapper {
     width: 80vw;
@@ -36,30 +47,30 @@ body {
 header {
   background-color: #3AAfA9;
   width: 100%;
-  height: 100vw;
+  height: 60vh;
 }
 
 @media (min-width: 1208px) {
   header {
-    height: 800px;
+    height: 80vh;
   }
 }
 
 .header-elements {
   line-height: 0.8;
   letter-spacing: -1px;
-  padding-top: 20vw;
+  padding-top: 10vh;
 }
 
 @media (min-width: 768px) {
   .header-elements {
-    padding-top: 20vw;
+    padding-top: 15vh;
   }
 }
 
 @media (min-width: 1208px) {
   .header-elements {
-    padding: 10vw 45% 0;
+    padding: 20vh 45% 0;
     width: 162px;
   }
 }
@@ -119,6 +130,8 @@ header {
 
 .scroll {
   display: none;
+  text-decoration: none;
+  color: #17252A;
   margin-top: 350px;
   text-align: center;
 }
@@ -261,7 +274,11 @@ header {
   text-align: center;
   margin: 5px 10px;
   border-radius: 15px;
+  border-color: #FEFFFF;
   margin: 0 auto;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 14px 34px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 14px 34px -4px rgba(0, 0, 0, 0.3);
 }
 
 .project-desc h3 {
@@ -291,10 +308,25 @@ header {
   width: 80vw;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 758px) {
   .project-img {
     width: 340px;
   }
+}
+
+.course-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.course-container {
+  width: 60%;
+  margin-right: 20px;
 }
 
 .course-background {
@@ -377,6 +409,7 @@ header {
 .contact-details a {
   text-decoration: none;
   color: #2B7A78;
+  font-size: 20px;
 }
 
 .contact-details a:hover {
@@ -418,13 +451,13 @@ header {
 
 @media (min-width: 768px) {
   .contact-fname {
-    margin-left: 8px;
+    margin-right: 0px;
   }
 }
 
 @media (min-width: 1208px) {
   .contact-fname {
-    margin-left: 15px;
+    margin-right: 4px;
   }
 }
 
@@ -438,13 +471,13 @@ header {
 
 @media (min-width: 768px) {
   .contact-lname {
-    margin-right: 8px;
+    margin-left: 0px;
   }
 }
 
 @media (min-width: 1208px) {
   .contact-lname {
-    margin-right: 15px;
+    margin-left: 3px;
   }
 }
 
@@ -570,7 +603,7 @@ header {
 }
 
 .nav-about {
-  background-color: #FC746D;
+  background-color: #834CB0;
   margin-left: 10px;
 }
 
@@ -601,7 +634,7 @@ header {
 }
 
 .nav-about:hover {
-  color: #FC746D;
+  color: #834CB0;
 }
 
 .nav-projects {

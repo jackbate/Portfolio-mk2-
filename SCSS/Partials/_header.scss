@@ -1,21 +1,23 @@
 header{
     background-color: $primary;
     width: 100%;
-    height: 100vw;
+    height: 60vh;
     @media (min-width:1208px){
-        height: 800px;
+        height: 80vh;
+        // 800px
     }
     
 }
     .header-elements{
         line-height: 0.8;
         letter-spacing: -1px;
-        padding-top: 20vw;
+        padding-top: 10vh;
+        // 20vw
         @media (min-width:768px){
-            padding-top: 20vw;
+            padding-top: 15vh;
         }
         @media (min-width:1208px){
-            padding: 10vw 45% 0;
+            padding: 20vh 45% 0;
             width: 162px;
         }
         
@@ -52,10 +54,12 @@ header{
                 text-align: left;
             }
         }
-    }
+    }  
 
 .scroll{
     display: none;
+    text-decoration: none;
+    color: $darkestblue;
     @media(min-width:1208px){
         display: block;
     }

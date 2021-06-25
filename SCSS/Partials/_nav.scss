@@ -53,7 +53,7 @@
         }
     }
     &-about{
-        background-color: $red1;
+        background-color: $purple;
         margin-left: 10px;
         @media (min-width:768px){
             margin-top: 0px;
@@ -73,7 +73,7 @@
             
         }
         &:hover{
-            color: $red1;
+            color: $purple;
         }
         
     }

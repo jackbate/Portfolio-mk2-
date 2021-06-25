@@ -18,7 +18,15 @@ body{
     }
 }
 
+.scroll-up{
+    text-align: center;
+    margin-left: 49.5%;
+    text-decoration: none;
+    color: $darkestblue;
+}
+
 .content-wrapper{
+    margin: 0 auto;
     @media(min-width:998px){
         width: 80vw;
     }
