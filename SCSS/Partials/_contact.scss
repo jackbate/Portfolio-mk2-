@@ -39,9 +39,12 @@
         a{
             text-decoration: none;
             color: $darkerblue;
-            font-size: 20px;
+            font-size: 15px;
             &:hover{
                 color: $darkestblue;
+            }
+            @media(min-width:280px){
+                font-size: 20px;
             }
         }
         @media (min-width:768px){

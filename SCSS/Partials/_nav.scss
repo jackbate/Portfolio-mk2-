@@ -53,6 +53,7 @@
         }
     }
     &-about{
+        color: $secondary;
         background-color: $purple;
         margin-left: 10px;
         @media (min-width:768px){
@@ -78,6 +79,7 @@
         
     }
     &-projects{
+        color: $secondary;
         background-color: $yellow2;
         @media (min-width:768px){
             margin: 0px;
@@ -103,6 +105,7 @@
         }
     }
     &-course{
+        color: $secondary;
         background-color: $yellow;
         @media (min-width:768px){
             margin: 0px;
@@ -128,6 +131,7 @@
         }
     }
     &-contact{
+        color: $secondary;
         background-color: $red2;
         @media (min-width:768px){
             margin-top: 0px;

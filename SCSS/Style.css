@@ -1,3 +1,49 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, body, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* /CSS reset */
 body {
   font-family: 'Roboto Mono', monospace;
   background-color: #FEFFFF;
@@ -37,7 +83,12 @@ body a:hover {
   }
 }
 
+.scroll-up a {
+  margin-top: 5px;
+}
+
 .content-wrapper {
+  width: 90vw;
   margin: 0 auto;
 }
 
@@ -58,6 +109,7 @@ header {
   background-color: #3AAfA9;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .header-elements {
@@ -136,13 +188,20 @@ header {
   display: none;
   text-decoration: none;
   color: #17252A;
-  margin-top: 45vh;
+  margin-bottom: -50vh;
   text-align: center;
+}
+
+.scroll a {
+  margin-bottom: 5px;
 }
 
 @media (min-width: 1208px) {
   .scroll {
     display: block;
+    position: absolute;
+    top: 89%;
+    right: 46.75%;
   }
 }
 
@@ -278,7 +337,6 @@ header {
   width: 85vw;
   border: 3px #DEF2F1 solid;
   background-color: #FEFFFF;
-  padding: 10px;
   text-align: center;
   margin: 5px 10px;
   border-radius: 15px;
@@ -332,6 +390,7 @@ header {
 
 .project-img {
   width: 80vw;
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
@@ -356,15 +415,30 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1208px) {
+  .course-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .course-container {
-  width: 60%;
+  width: 100%;
   margin-right: 20px;
+}
+
+@media (min-width: 1208px) {
+  .course-container {
+    width: 60%;
+  }
 }
 
 .course-background {
@@ -447,11 +521,17 @@ header {
 .contact-details a {
   text-decoration: none;
   color: #2B7A78;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .contact-details a:hover {
   color: #17252A;
+}
+
+@media (min-width: 280px) {
+  .contact-details a {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -641,6 +721,7 @@ header {
 }
 
 .nav-about {
+  color: #FEFFFF;
   background-color: #834CB0;
   margin-left: 10px;
 }
@@ -676,6 +757,7 @@ header {
 }
 
 .nav-projects {
+  color: #FEFFFF;
   background-color: #B08031;
 }
 
@@ -712,6 +794,7 @@ header {
 }
 
 .nav-course {
+  color: #FEFFFF;
   background-color: #FCB23A;
 }
 
@@ -748,6 +831,7 @@ header {
 }
 
 .nav-contact {
+  color: #FEFFFF;
   background-color: #B04943;
 }
 

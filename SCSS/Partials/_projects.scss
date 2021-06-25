@@ -32,7 +32,6 @@
         // 340px
         border: 3px $tertiary solid;
         background-color: $secondary;
-        padding: 10px;
         text-align: center;
         margin: 5px 10px;
         border-radius: 15px;
@@ -76,6 +75,7 @@
 
 .project-img{
     width: 80vw;
+    border-radius: 5px;
     @media (min-width:768px){
         width: 40vw;
     }
